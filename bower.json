@@ -1,0 +1,17 @@
+{
+  "name": "ndx-timezone",
+  "description": "clientside timezone service for ndx-framework",
+  "main": "build/index.js",
+  "authors": [
+    "ndxbxrme <lewis_the_cat@hotmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ndxbxrme/ndx-timezone-client",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
