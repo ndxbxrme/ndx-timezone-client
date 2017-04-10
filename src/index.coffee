@@ -3,7 +3,7 @@ module = null
 try
   module = angular.module 'ndx'
 catch e
-  module =angular.module 'ndx-timezone-client', []
+  module =angular.module 'ndx', []
 module.run ($rootScope, $http, auth) ->
   reported = false
   $rootScope.$on '$stateChangeSuccess', ->

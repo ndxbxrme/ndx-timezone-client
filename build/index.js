@@ -8,7 +8,7 @@
     module = angular.module('ndx');
   } catch (error) {
     e = error;
-    module = angular.module('ndx-timezone-client', []);
+    module = angular.module('ndx', []);
   }
 
   module.run(function($rootScope, $http, auth) {
