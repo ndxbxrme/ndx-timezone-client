@@ -4,10 +4,10 @@ try
   module = angular.module 'ndx'
 catch e
   module =angular.module 'ndx', []
-module.run ($rootScope, $http, auth) ->
+module.run ($rootScope, $http, Auth) ->
   reported = false
   $rootScope.$on '$stateChangeSuccess', ->
-    if auth.getUser()
+    if Auth.getUser()
       timezone = []
       if not reported
         i = 0

@@ -11,12 +11,12 @@
     module = angular.module('ndx', []);
   }
 
-  module.run(function($rootScope, $http, auth) {
+  module.run(function($rootScope, $http, Auth) {
     var reported;
     reported = false;
     return $rootScope.$on('$stateChangeSuccess', function() {
       var d, i, lastOffset, timezone;
-      if (auth.getUser()) {
+      if (Auth.getUser()) {
         timezone = [];
         if (!reported) {
           i = 0;
